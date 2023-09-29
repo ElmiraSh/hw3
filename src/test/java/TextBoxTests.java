@@ -3,6 +3,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -12,7 +13,8 @@ public class TextBoxTests {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy="eager";
-        Configuration.headless=true;
+        //   Configuration.headless=true;
+        Configuration.holdBrowserOpen = true;
     }
 
     @Test
@@ -45,7 +47,7 @@ public class TextBoxTests {
         $(byText("Noida")).click();
 
 
-//        $(By.xpath("//*[contains(text(),'Submit')]")).click();
+
         $("#submit").click();
 
         executeJavaScript("$('#fixedban').remove()");
@@ -53,14 +55,10 @@ public class TextBoxTests {
 
 
 //// проверка
-//      $("#output #firstName").shouldHave(text("Elmira"));
-//      $("#output #lastName").shouldHave(text("Shaykhattarova"));
-//      $("#output #userEmail").shouldHave(text("elmirailgizovna@gmail.com"));
-//      $("#output #userNumber").shouldHave(text("8906123456"));
-//      $("#output #currentAddress").shouldHave(text("Tatarstan,Kazan"));
 
+      $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+      $(".table-responsive").shouldHave((text("Elmira")),text("Shaykhattarova"),text("elmirailgizovna@gmail.com"), text("Female"), text("8906123456"), text("29 April,1998"), text("Chemistry"), text("picture.jpg"), text("Tatarstan,Kazan"), text("NCR Noida"));
 
-
-  }
-
+    }
 }
+
