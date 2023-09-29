@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TextBoxTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-17T20:13:39" hostname="LAPTOP-8GOCGP5N" time="7.226">
+<testsuite name="TextBoxTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-09-29T12:20:57" hostname="LAPTOP-8GOCGP5N" time="13.471">
   <properties/>
-  <testcase name="fillFormTest()" classname="TextBoxTests" time="7.226"/>
+  <testcase name="fillFormTest()" classname="TextBoxTests" time="13.471"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-сент. 17, 2023 11:13:39 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
+сент. 29, 2023 3:21:03 PM org.openqa.selenium.remote.service.DriverService$Builder getLogOutput
 INFO: Driver logs no longer sent to console by default; https://www.selenium.dev/documentation/webdriver/drivers/service/#setting-log-output
-сент. 17, 2023 11:13:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 116, so returning the closest version found: 114
+сент. 29, 2023 3:21:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 117, so returning the closest version found: 114
 ]]></system-err>
 </testsuite>

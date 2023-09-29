@@ -23,3 +23,12 @@ build/
 
 ### Logs ###
 *.log
+
+.gradle/
+.idea/
+*.log
+build/
+.gradle
+gradle/
+gradlew
+gradlew.bat

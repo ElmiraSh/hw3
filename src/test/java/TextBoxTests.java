@@ -53,12 +53,12 @@ public class TextBoxTests {
 
 
 
-//
-//       $("#output #firstName").shouldHave(text("Elmira"));
-//       $("#output #lastName").shouldHave(text("Shaykhattarova"));
-//       $("#output #userEmail").shouldHave(text("elmirailgizovna@gmail.com"));
-//       $("#output #userNumber").shouldHave(text("8906123456"));
-//       $("#output #currentAddress").shouldHave(text("Tatarstan,Kazan"));
+// проверка
+      $("#output #firstName").shouldHave(text("Elmira"));
+      $("#output #lastName").shouldHave(text("Shaykhattarova"));
+      $("#output #userEmail").shouldHave(text("elmirailgizovna@gmail.com"));
+      $("#output #userNumber").shouldHave(text("8906123456"));
+      $("#output #currentAddress").shouldHave(text("Tatarstan,Kazan"));
 
 
 
