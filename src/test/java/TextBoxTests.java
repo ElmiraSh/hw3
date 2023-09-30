@@ -14,7 +14,7 @@ public class TextBoxTests {
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy="eager";
         //   Configuration.headless=true;
-        Configuration.holdBrowserOpen = true;
+        // Configuration.holdBrowserOpen = true;
     }
 
     @Test
@@ -57,7 +57,13 @@ public class TextBoxTests {
 //// проверка
 
       $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
-      $(".table-responsive").shouldHave((text("Elmira")),text("Shaykhattarova"),text("elmirailgizovna@gmail.com"), text("Female"), text("8906123456"), text("29 April,1998"), text("Chemistry"), text("picture.jpg"), text("Tatarstan,Kazan"), text("NCR Noida"));
+      $(".table-responsive").shouldHave((text("Elmira")),
+              text("Shaykhattarova"),
+              text("elmirailgizovna@gmail.com"),
+              text("Female"), text("8906123456"),
+              text("29 April,1998"), text("Chemistry"),
+              text("picture.jpg"), text("Tatarstan,Kazan"),
+              text("NCR Noida"));
 
     }
 }
